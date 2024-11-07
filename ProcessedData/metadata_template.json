@@ -1,0 +1,28 @@
+{
+  "description": "A concise description of the dataset and its contents.",
+  "source": "Name of the data source (e.g., American Community Survey, FBI UCR).",
+  "geography": {
+    "level": "Geographic level of the dataset (e.g., state, county, tract).",
+    "geoid_description": "Description of the GEOID format (e.g., '5-digit GEOID representing counties').",
+    "geoid_components": {
+      "state_GEOID": "First 2 digits",
+      "county_GEOID": "Next 3 digits (if applicable)",
+      "tract_GEOID": "Last 6 digits (if applicable)"
+    }
+  },
+  "variables": [
+    {
+      "name": "Variable name as it appears in the CSV file.",
+      "description": "A full description of the variable and its purpose.",
+      "type": "Data type of the variable (e.g., integer, float, string).",
+      "units": "Units of measurement (e.g., 'percentage' for rates, 'count' for totals).",
+      "source_notes": "Additional details on the variable’s source or calculation method, including variable codes if relevant (e.g., Census variable code)."
+    }
+    // Additional variables can be added in the same format as needed
+  ],
+  "update_frequency": "How often the data is updated (e.g., annual, monthly, manually).",
+  "notes": [
+    "Any important notes about the dataset, including limitations, geographic boundary considerations, or known data issues.",
+  ]
+}
+
