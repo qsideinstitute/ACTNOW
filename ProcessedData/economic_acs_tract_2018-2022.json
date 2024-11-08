@@ -23,7 +23,7 @@
       "description": "Unemployment rate of the civilian labor force",
       "type": "float",
       "units": "Percentage",
-      "source_notes": "ACS variable code DP03_0009PE"
+      "source_notes": "ACS variable code DP03_0009P"
     },
     {
       "name": "poverty_rate",
