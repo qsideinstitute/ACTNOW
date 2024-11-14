@@ -1,0 +1,35 @@
+{
+  "description": "Dataset containing the number of Grocery Stores and Food Stores per 1000 inhabitants by census tract.",
+  "source": "National Neighborhood Data Archive (NaNDA).",
+  "geography": {
+    "level": "tract.",
+    "geoid_description": "10-digit GEOID representing census tract.",
+    "geoid_components": {
+      "state_GEOID": "First 2 digits",
+      "county_GEOID": "Next 3 digits",
+      "tract_GEOID": "Last 6 digits"
+    }
+  },
+  "variables": [
+    {
+      "name": "den_grocery",
+      "description": "Grocery stores per 1000 people",
+      "type": "float",
+      "units": "per 1000 people",
+      "source_notes": "Establishments primarily engaged in the retail sale of food, including canned and dry goods, tea, coffee, spices, sugar, flour, fresh fruits and vegetables, fresh and prepared meats, fish, and poultry. Often (but not always) independent stores."
+    },
+
+    {
+      "name": "den_totalfoodstores",
+      "description": "Total Food Stores per 1000 people",
+      "type": "float",
+      "units": "per 1000 people",
+      "source_notes": "Includes independent grocery, chain stores, meat and fish markets, fruit and vegetable markets, warehouse club selling food"
+    }
+    
+  ],
+  "update_frequency": "Manually",
+  "notes": [
+    "Census tract based on 2020 Census Tract designations"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "description": "Dataset containing the number of healthcare services locations per 1000 inhabitants by census tract.",
+  "source": "National Neighborhood Data Archive (NaNDA).",
+  "geography": {
+    "level": "tract.",
+    "geoid_description": "10-digit GEOID representing census tract.",
+    "geoid_components": {
+      "state_GEOID": "First 2 digits",
+      "county_GEOID": "Next 3 digits",
+      "tract_GEOID": "Last 6 digits"
+    }
+  },
+  "variables": [
+    {
+      "name": "den_allphysicians",
+      "description": "All offices or clinics of physicians per 1000 people",
+      "type": "float",
+      "units": "per 1000 people",
+      "source_notes": "Physicians (except mental health and osteopathy), including family medicine and oncologists, pediatricians, obstetrician/gynecologists, ophthalmologists, and general/internal medicine practitioners as well as specialists such as cardiologists, dermatologists."
+    },
+
+    {
+      "name": "den_mentalhealthphys",
+      "description": "Offices or clinics of mental health physicians per 1000 people",
+      "type": "float",
+      "units": "per 1000 people",
+      "source_notes": "Mental health physicians, such as psychiatrists and psychotherapists with medical degrees (but excluding those without a medical degree such as psychologists and counselors)."
+    },
+
+    {
+      "name": "den_outpatientclinics",
+      "description": "All outpatient medical clinics including Urgent Care centers and HMO per 1000 people",
+      "type": "float",
+      "units": "per 1000 people",
+      "source_notes": "Includes ambulatory surgical centers, freestanding emergency medical centers, HMOs, and other outpatient medical centers; also includes kidney dialysis centers and other outpatient specialty clinics, such as physical therapy clinics, mental health clinics, respiratory therapy clinics, and weight loss clinics."
+    },
+
+    {
+      "name": "den_pharmacies",
+      "description": "Retail pharmacies and drug stores per 1000 people",
+      "type": "float",
+      "units": "per 1000 people",
+      "source_notes": "Establishments engaged in the retail sale of prescription drugs, proprietary drugs, and non-prescription medicines, and which may also carry a number of related lines, such as cosmetics and toiletries."
+    }
+    
+  ],
+  "update_frequency": "Manually",
+  "notes": [
+    "Census tract based on 2020 Census Tract designations"
+  ]
+}

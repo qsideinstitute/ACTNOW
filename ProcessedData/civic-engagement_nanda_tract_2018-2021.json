@@ -1,0 +1,43 @@
+{
+  "description": "Dataset containing the number of Civic and Social Associations, Religious, and Youth Organizations per 1000 inhabitants by census tract.",
+  "source": "National Neighborhood Data Archive (NaNDA).",
+  "geography": {
+    "level": "tract.",
+    "geoid_description": "10-digit GEOID representing census tract.",
+    "geoid_components": {
+      "state_GEOID": "First 2 digits",
+      "county_GEOID": "Next 3 digits",
+      "tract_GEOID": "Last 6 digits"
+    }
+  },
+  "variables": [
+    {
+      "name": "den_civsoc",
+      "description": "Civic and Social Associations per 1000 people",
+      "type": "float",
+      "units": "per 1000 people",
+      "source_notes": "Membership organizations engaged in civic or social activities. Examples include alumniassociations, booster clubs, civic associations, community membership clubs, social clubs, singing societies, parent-teacher associations, and homeowner and tenant associations (except property management)."
+    }, 
+
+    {
+      "name": "den_religiousorgs",
+      "description": "Religious Organizations per 1000 people",
+      "type": "float",
+      "units": "per 1000 people",
+      "source_notes": "Establishments of religious organizations operated for worship, religious training or study, government or administration of an organized religion, or promotion of religious activities."
+    },
+
+    {
+      "name": "den_youthorgs",
+      "description": "Youth Organizations per 1000 people",
+      "type": "float",
+      "units": "per 1000 people",
+      "source_notes": "Membership organizations engaged in youth focused civic or social activities. Examples include youth organizations, boy scout organizations, and girl scout organizations."
+    }
+    
+  ],
+  "update_frequency": "Manually",
+  "notes": [
+    "Census tract based on 2020 Census Tract designations"
+  ]
+}
