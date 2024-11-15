@@ -7,6 +7,7 @@ This repository contains code and data for a project focused on community safety
 - **Scripts**: Contains R scripts used to acquire and process data, ensuring consistency with project standards. These scripts follow a standardized workflow outlined in the [Documentation Guide](https://docs.google.com/document/d/1uMYR-6qjvn25AVKHAnkWwiLuI0IAvWdsienCy5dFiDc/edit?usp=sharing).
 - **InputData**: A temporary holding area for raw data. Data here is stored as acquired and is not yet processed.
 - **ProcessedData**: Contains processed data files that adhere to the metadata standard. This folder is a local repository until the data transitions to cloud storage.
+- **Methodology**: Contains any methodology and data information files from the original data sources.
 
 ## Documentation Guide
 
