@@ -1,0 +1,35 @@
+{
+  "description": "This dataset lists the number of public transit stops per United States census tract as of 2022, reported by th BUreau of Transportation Statistics",
+  "source": "Bureau of Transportation Statistics",
+  "geography": {
+    "level": "tract.",
+    "geoid_description": "10-digit GEOID representing census tract.",
+    "geoid_components": {
+      "state_GEOID": "First 2 digits",
+      "county_GEOID": "Next 3 digits",
+      "tract_GEOID": "Last 6 digits"
+    }
+  },
+  "variables": [
+    {
+      "name": "count",
+      "description": "Count of transit stops in the census tract",
+      "type": "float",
+      "units": "count",
+      "source_notes": "NA"
+    },
+
+    {
+      "name": "stops_per_capita",
+      "description": "Transit Stops per 1000 People",
+      "type": "float",
+      "units": "per 1000 people",
+      "source_notes": "NA"
+    }
+
+  ],
+  "update_frequency": "Manually",
+  "notes": [
+    "Census tract based on 2020 Census Tract designations, population data from 2016-2020 5-year ACS "
+  ]
+}

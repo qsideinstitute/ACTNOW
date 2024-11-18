@@ -1,0 +1,35 @@
+{
+  "description": "This dataset lists the number of public transit stops per United States census tract based on data from the National Transit Map (NTM) as voluntarily reported to NTM by one of 270 regional transit agencies choosing to participate between 2016 and 2018",
+  "source": "National Neighborhood Data Archive (NaNDA).",
+  "geography": {
+    "level": "tract.",
+    "geoid_description": "10-digit GEOID representing census tract.",
+    "geoid_components": {
+      "state_GEOID": "First 2 digits",
+      "county_GEOID": "Next 3 digits",
+      "tract_GEOID": "Last 6 digits"
+    }
+  },
+  "variables": [
+    {
+      "name": "count_ntm_stops",
+      "description": "Count of transit stops reported to National Transit Map as of 2018",
+      "type": "float",
+      "units": "count",
+      "source_notes": "NA"
+    },
+
+    {
+      "name": "stops_per_capita",
+      "description": "Transit Stops per 1000 People",
+      "type": "float",
+      "units": "per 1000 people",
+      "source_notes": "NA"
+    }
+
+  ],
+  "update_frequency": "Manually",
+  "notes": [
+    "Census tract based on 2010 Census Tract designations"
+  ]
+}
