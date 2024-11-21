@@ -1,0 +1,34 @@
+{
+  "description": "This dataset contains county-level data for AQI for the years 2018-2022",
+  "source": "United States Environmental Protection Agency",
+  "geography": {
+    "level": "County",
+    "geoid_description": "5-digit GEOID representing county.",
+    "geoid_components": {
+      "state_GEOID": "First 2 digits",
+      "county_GEOID": "Next 3 digits",
+      "tract_GEOID": "NA"
+    }
+  },
+  "variables": [
+    {
+      "name": "Median AQI",
+      "description": "Annual Median AQI level recorded",
+      "type": "int",
+      "units": "AQI",
+      "source_notes": "AQI Information: https://www.airnow.gov/aqi/aqi-basics/ "
+    },
+
+    {
+      "name": "rate_notgood_aqi",
+      "description": "The proportion of days that are classified as Unhealthy for Sensitive Groups, Unhealthy, Very Unhealthy, or Hazardous",
+      "type": "float",
+      "units": "Number of days out of the total AQI days",
+      "source_notes": "See https://www.airnow.gov/aqi/aqi-basics/, for information about AQI levels"
+    }
+
+  ],
+  "update_frequency": "Daily",
+  "notes": [
+  ]
+}
