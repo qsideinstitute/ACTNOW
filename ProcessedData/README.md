@@ -14,3 +14,7 @@ The `metadata_template.json` file provides a standardized format for documenting
 - Complete all relevant sections in the copied file to fully describe the dataset.
 
 Please avoid editing the original template directly; instead, create a new metadata file for each dataset following the established naming conventions.
+
+## Shapefile Folder
+
+The **Shapefiles** subfolder contains census tract shapefiles.
