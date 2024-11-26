@@ -12,12 +12,13 @@ library(dplyr)
 library(stringr)
 library(tigris)
 library(sf)
+library(purrr)
 
 # Set census API key
-census_api_key("4f5ef336926755cb3eaa12e037f887c4cdb1c984")
+census_api_key("d48d2c6fa999265383738be2b1f48aed4900866a", install=TRUE, overwrite=TRUE)
 
 # Define years and states
-years <- 2018:2022
+years <- 2019:2022
 state_abbreviations <- c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
                          "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
                          "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
@@ -32,12 +33,12 @@ variable_list <- list(
   economic = list(
     vars = c("B19013_001", "DP03_0009P", "DP03_0128P", "DP03_0074P"),
     names = c("median_income", "unemployment_rate", "poverty_rate", "snap_benefits"),
-    update = TRUE
+    update = FALSE
   ),
   education = list(
     vars = c("DP02_0068P", "DP02_0067P"),
     names = c("bachelors_degree_or_higher", "high_school_or_higher"),
-    update = TRUE
+    update = FALSE
   ),
   health = list(
     vars = c("DP03_0099P"),
@@ -47,7 +48,7 @@ variable_list <- list(
   neighborhood = list(
     vars = c("B08006_002", "DP03_0025"),
     names = c("car_commute", "mean_travel_time"),
-    update = TRUE
+    update = FALSE
   )
 )
 
@@ -73,7 +74,7 @@ for (topic in names(variable_list)) {
     variables <- variable_list[[topic]]$vars
     var_names <- variable_list[[topic]]$names
     
-    data <- get_and_rename_census_data(years, variables, var_names)
+    data <- get_census_data(years, variables, var_names)
     write_csv(data, paste0("ProcessedData/", topic, "_acs_tract_", min(years), "-", max(years), ".csv"))
   }
 }
