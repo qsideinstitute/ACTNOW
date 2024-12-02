@@ -1,0 +1,43 @@
+{
+  "description": "Dataset containing demographic variables from the ACS 5 year estimates.",
+  "source": "American Community Survey (ACS) - US Census Bureau",
+  "geography": {
+    "level": "tract.",
+    "geoid_description": "10-digit GEOID representing census tract.",
+    "geoid_components": {
+      "state_GEOID": "First 2 digits",
+      "county_GEOID": "Next 3 digits",
+      "tract_GEOID": "Last 6 digits"
+    }
+  },
+  "variables": [
+    {
+      "name": "population",
+      "description": "Total Population",
+      "type": "float",
+      "units": "Population in Census Tract",
+      "source_notes": "DP05_0001E"
+    },
+
+    {
+      "name": "foreign_born_p",
+      "description": "Percent of foreign born population",
+      "type": "float",
+      "units": "Percent out of total geography population",
+      "source_notes": "DP02_0094PE"
+    },
+
+    {
+      "name": "no_english_p",
+      "description": "Population 5 and over who speak English less than 'very well'",
+      "type": "float",
+      "units": "Percent out of total geography population",
+      "source_notes": "DP02_0115PE"
+    }
+    
+  ],
+  "update_frequency": "Yearly (5-year estimates)",
+  "notes": [
+    "N/A"
+  ]
+}

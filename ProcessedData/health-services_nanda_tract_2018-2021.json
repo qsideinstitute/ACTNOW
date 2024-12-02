@@ -1,6 +1,6 @@
 {
-  "description": "Dataset containing the number of healthcare services locations per 1000 inhabitants by census tract.",
-  "source": "National Neighborhood Data Archive (NaNDA).",
+  "description": "This dataset contains infrastructure variables gathered from the American Community Survey (ACS) from 2019 to 2022. It includes data related to household infrastructure such as kitchens and sanitary infrastructure",
+  "source": "American Community Survey (ACS) - US Census Bureau",
   "geography": {
     "level": "tract.",
     "geoid_description": "10-digit GEOID representing census tract.",
@@ -12,11 +12,11 @@
   },
   "variables": [
     {
-      "name": "den_allphysicians",
-      "description": "All offices or clinics of physicians per 1000 people",
+      "name": "lacking_plumbing_p",
+      "description": "P",
       "type": "float",
       "units": "per 1000 people",
-      "source_notes": "Physicians (except mental health and osteopathy), including family medicine and oncologists, pediatricians, obstetrician/gynecologists, ophthalmologists, and general/internal medicine practitioners as well as specialists such as cardiologists, dermatologists."
+      "source_notes": "DP04_0073PE"
     },
 
     {
@@ -25,22 +25,6 @@
       "type": "float",
       "units": "per 1000 people",
       "source_notes": "Mental health physicians, such as psychiatrists and psychotherapists with medical degrees (but excluding those without a medical degree such as psychologists and counselors)."
-    },
-
-    {
-      "name": "den_outpatientclinics",
-      "description": "All outpatient medical clinics including Urgent Care centers and HMO per 1000 people",
-      "type": "float",
-      "units": "per 1000 people",
-      "source_notes": "Includes ambulatory surgical centers, freestanding emergency medical centers, HMOs, and other outpatient medical centers; also includes kidney dialysis centers and other outpatient specialty clinics, such as physical therapy clinics, mental health clinics, respiratory therapy clinics, and weight loss clinics."
-    },
-
-    {
-      "name": "den_pharmacies",
-      "description": "Retail pharmacies and drug stores per 1000 people",
-      "type": "float",
-      "units": "per 1000 people",
-      "source_notes": "Establishments engaged in the retail sale of prescription drugs, proprietary drugs, and non-prescription medicines, and which may also carry a number of related lines, such as cosmetics and toiletries."
     }
     
   ],
