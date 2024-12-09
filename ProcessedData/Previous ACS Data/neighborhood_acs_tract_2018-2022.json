@@ -1,0 +1,34 @@
+{
+  "description": "This dataset contains neighborhood variables gathered from the American Community Survey (ACS) from 2018 to 2022. It includes data related to commuting patterns, such as car usage and average travel time to work, providing insights into neighborhood-level transportation behaviors at the Census tract level.",
+  "source": "American Community Survey 5-year data - U.S. Census Bureau",
+  "geography": {
+    "level": "Census tract",
+    "geoid_description": "11-digit GEOID representing Census tracts.",
+    "geoid_components": {
+      "state_GEOID": "First 2 digits",
+      "county_GEOID": "Next 3 digits",
+      "tract_GEOID": "Last 6 digits"
+    }
+  },
+  "variables": [
+    {
+      "name": "car_commute",
+      "description": "Number of workers who commute to work by car, truck, or van",
+      "type": "integer",
+      "units": "Count",
+      "source_notes": "ACS variable code B08006_002"
+    },
+    {
+      "name": "mean_travel_time",
+      "description": "Mean travel time to work for workers 16 years and over (in minutes)",
+      "type": "float",
+      "units": "Minutes",
+      "source_notes": "ACS variable code DP03_0025"
+    }
+  ],
+  "update_frequency": "annual",
+  "notes": [
+    "GEOIDs correspond to Census tracts for the given year of the dataset. Note that Census tract boundaries have changed after the 2020 decennial census, which may affect geographic consistency over time."
+  ]
+}
+

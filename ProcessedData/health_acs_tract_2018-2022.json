@@ -1,5 +1,5 @@
 {
-  "description": "This dataset contains health variables gathered from the American Community Survey (ACS) from 2018 to 2022. It includes data related to health insurance coverage at the Census tract level.",
+  "description": "This dataset contains health and healthcare variables gathered from the American Community Survey (ACS) from 2018 to 2022. It includes data related to health insurance, social security and disability.",
   "source": "American Community Survey 5-year data - U.S. Census Bureau",
   "geography": {
     "level": "Census tract",
@@ -12,11 +12,32 @@
   },
   "variables": [
     {
-      "name": "without_health_insurance",
-      "description": "Percentage of the civilian noninstitutionalized population without health insurance coverage",
+      "name": "social_security_p",
+      "description": "Percent of total households with social security",
+      "type": "integer",
+      "units": "Percent out of total households in geography",
+      "source_notes": "ACS variable code DP03_0066PE"
+    },
+    {
+      "name": "with_health_insurance_p",
+      "description": "Percentage of civilian nonnstitutionalized with health insurance coverage",
       "type": "float",
-      "units": "Percentage",
-      "source_notes": "ACS variable code DP03_0099P"
+      "units": "Minutes",
+      "source_notes": "ACS variable code DP03_0096PE"
+    },
+    {
+      "name": "public_insurance_p",
+      "description": "Percentage of civilian nonnstitutionalized with public coverage",
+      "type": "integer",
+      "units": "Percent out of total households in geography",
+      "source_notes": "ACS variable code DP03_0098PE"
+    },
+    {
+      "name": "disability_p",
+      "description": "Percentage of civilian nonnstitutionalized with a disability",
+      "type": "float",
+      "units": "Minutes",
+      "source_notes": "ACS variable code DP02_0072PE"
     }
   ],
   "update_frequency": "annual",
